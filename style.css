@@ -58,3 +58,29 @@
   font-size: 15px;
   border: 1px solid black;
 }
+
+.footer__conteiner {
+  height: 50px;
+  width: 1060px;
+  margin: 0px auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.new-message__form {
+  width: 400px;
+  border: 1px solid black;
+}
+
+.chat__form {
+  width: 660px;
+  border: 1px solid black;
+}
+
+.chat__form input {
+  width: 90%;
+  height: 70%;
+  margin: 5px;
+  color: #333;
+}
