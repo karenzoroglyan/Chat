@@ -5,7 +5,7 @@
 }
 
 .header {
-  background: blue;
+  background: pink;
 }
 
 .header__container {
@@ -24,7 +24,7 @@
   height: 500px;
   width: 1060px;
   margin: 0px auto;
-  background: rgb(69, 171, 240);
+  background: pink;
   display: flex;
   flex-direction: row;
 }
@@ -40,6 +40,14 @@
   width: 400px;
   background: #ffffff;
   border: 1px solid black;
+}
+
+.contacts__item1 {
+  height: 100px;
+  width: 400px;
+  color: #333;
+  background: #ffffff;
+  border: 1px solid red;
 }
 
 .conversation {
@@ -69,8 +77,19 @@
 }
 
 .new-message__form {
+  display: flex;
+  align-items: center;
   width: 400px;
   border: 1px solid black;
+  padding: 0 15px;
+}
+
+#message__input {
+  border-radius: 100%;
+  color: #333;
+  background-color: #ffffff;
+  width: 30px;
+  font-size: 24px;
 }
 
 .chat__form {
