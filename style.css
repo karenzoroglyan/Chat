@@ -4,102 +4,73 @@
   box-sizing: border-box;
 }
 
-.header {
-  background: pink;
+html {
+  background:linear-gradient(to right,#ffc0ff,#ba1ea7);
 }
 
-.header__container {
-  color: white;
-  font-size: 24px;
-  width: 1060px;
-  margin: 0px auto;
-}
-
-.main {
-  background: #ffffff;
-}
-
-.main__container {
-  color: white;
-  height: 500px;
-  width: 1060px;
-  margin: 0px auto;
-  background: pink;
+.wrapper {
   display: flex;
   flex-direction: row;
+  height: 700px;
+  width: 1060px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.contacts-section{
+  height: 700px;
+  width: 400px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px; 
+  background-color: #ffc0ff;
 }
 
 .contacts {
-  height: 500px;
-  width: 400px;
-  border: 1px solid gray;
-}
-
-.contacts__item {
-  height: 100px;
-  width: 400px;
-  background: #ffffff;
-  border: 1px solid black;
-}
-
-.contacts__item1 {
-  height: 100px;
-  width: 400px;
-  color: #333;
-  background: #ffffff;
-  border: 1px solid red;
-}
-
-.conversation {
-  height: 500px;
-  width: 660px;
-  border: 1px solid gray;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  height: 600px;
 }
 
-.conversation__item {
-  width: 660px;
-  height: 50px;
-  color: black;
-  background: #ffffff;
-  font-size: 15px;
-  border: 1px solid black;
-}
-
-.footer__conteiner {
-  height: 50px;
-  width: 1060px;
-  margin: 0px auto;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-}
-
-.new-message__form {
+.add-contact-section {
   display: flex;
   align-items: center;
-  width: 400px;
-  border: 1px solid black;
-  padding: 0 15px;
+  padding: 20px 0px 0px 20px;
+  border-top: 2px solid #ffffff;
 }
 
-#message__input {
+.add-contact-button{
+  padding: 5px;
   border-radius: 100%;
-  color: #333;
-  background-color: #ffffff;
-  width: 30px;
   font-size: 24px;
+  text-decoration: none;
+  color: #ba1ea7;
+  background-color: #ffffff;
 }
 
-.chat__form {
+.conversation-section{
+  display: flex;
+  flex-direction: column;
   width: 660px;
-  border: 1px solid black;
 }
 
-.chat__form input {
-  width: 90%;
-  height: 70%;
-  margin: 5px;
-  color: #333;
+.conversation-message-list{
+  height: 600px;
+}
+
+.conversation-form{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 15px;
+  border-top: 2px solid #ffffff;
+  border-bottom-right-radius: 30px;
+  background-color:#ba1ea7 ;
+}
+
+.conversation-form input {
+  height: 25px;
+  width: 100%;
 }

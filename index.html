@@ -8,41 +8,20 @@
     <title>Chat</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="logo">Chat</div>
-      </div>
-    </header>
-    <main class="main">
-      <div class="main__container">
-        <div class="contacts">
-          <div class="contacts__item"></div>
-          <div class="contacts__item"></div>
-          <div class="contacts__item"></div>
-          <div class="contacts__item"></div>
-        </div>
-        <div class="conversation">
-          <div class="conversation__item">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-            tenetur, obcaecati nostrum odio in, fugit nihil repellendus iste
-            aperiam repellat deleniti sequi atque tempore sapiente, reiciendis
-            iure voluptas vitae officiis.
-          </div>
-          <div class="conversation__item"></div>
-          <div class="conversation__item"></div>
+    <div class="wrapper">
+      <div class="contacts-section">
+        <div class="contacts"></div>
+        <div class="add-contact-section">
+          <a class="add-contact-button" href="#">+</a>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <div class="footer__conteiner">
-        <div class="new-message__form">
-          <input id="message__input" type="button" value="+" />
-        </div>
-        <div class="chat__form">
+      <div class="conversation-section">
+        <div class="conversation-message-list"></div>
+        <div class="conversation-form">
           <input type="text" placeholder="type a message" />
         </div>
       </div>
-    </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
