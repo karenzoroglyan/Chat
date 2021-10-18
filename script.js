@@ -1,33 +1,6 @@
-const contactsContainer = document.querySelector(".contacts");
-
-function Contact(contact) {
-  const div = document.createElement("div");
-  div.classList.add("contact-item");
-  div.innerText = contact.name;
-
-  return div;
-}
-
-const CONTACTS = [
-  {
-    name: "Saul",
-  },
-  {
-    name: "David",
-  },
-  {
-    name: "Salomon",
-  },
-];
-
-CONTACTS.forEach((contact) => {
-  const element = Contact(contact);
-  contactsContainer.append(element);
-});
-
 const messageContainer = document.querySelector(".conversation-message-list");
 
-function Messages(message) {
+function Message(message) {
   const div = document.createElement("div");
   div.classList.add("message-item");
   div.innerText = message.text;
@@ -35,13 +8,17 @@ function Messages(message) {
   return div;
 }
 
-const MESSAGES = [
-  { text: "Hello!" },
-  { text: "What's up?" },
-  { text: "Very nice!" },
+const MESSAGE = [
+  {
+    text: "Ты более праведен, чем я, ибо ты отплатил мне добром, а я отплатил тебе злом",
+  },
 ];
+function showMessage() {
+  MESSAGE.forEach((message) => {
+    const element = Message(message);
+    messageContainer.append(element);
+  });
+}
 
-MESSAGES.forEach((message) => {
-  const element = Messages(message);
-  messageContainer.append(element);
-});
+const divTag = document.getElementById("contact-item");
+divTag.addEventListener("click", showMessage);
