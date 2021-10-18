@@ -5,7 +5,8 @@
 }
 
 html {
-  background:linear-gradient(to right,#ffc0ff,#ba1ea7);
+  background:linear-gradient(to right,#02c4ff,#002f55);
+  zoom: 95%;
 }
 
 .wrapper {
@@ -25,13 +26,23 @@ html {
   width: 400px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px; 
-  background-color: #ffc0ff;
+  background-color: #002f55;
+}
+
+.search-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-bottom: 2px solid #ffffff;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 550px;
+  overflow-y: scroll;
 }
 
 .add-contact-section {
@@ -42,11 +53,11 @@ html {
 }
 
 .add-contact-button{
-  padding: 5px;
+  padding: 10px;
   border-radius: 100%;
   font-size: 24px;
   text-decoration: none;
-  color: #ba1ea7;
+  color: #002f55;
   background-color: #ffffff;
 }
 
@@ -56,8 +67,27 @@ html {
   width: 660px;
 }
 
+.user-section {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ height: 50px;
+ border-top-right-radius: 30px;
+ border-bottom: 2px solid #ffffff;
+ color: #ffffff;
+ background-color: #02c4ff ;
+}
+
 .conversation-message-list{
-  height: 600px;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 550px;
+}
+
+.message-item {
+  height: 50px;
+  background-color: darkorange;
 }
 
 .conversation-form{
@@ -67,10 +97,15 @@ html {
   padding: 15px;
   border-top: 2px solid #ffffff;
   border-bottom-right-radius: 30px;
-  background-color:#ba1ea7 ;
+  background-color:#02c4ff ;
 }
 
 .conversation-form input {
   height: 25px;
   width: 100%;
+}
+
+.contact-item {
+  height: 50px;
+  background-color: #57ff48
 }
