@@ -38,14 +38,14 @@ html {
   border-bottom: 2px solid #ffffff;
 }
 
-.contacts {
+#contacts {
   display: flex;
   flex-direction: column;
   height: 550px;
   overflow-y: scroll;
 }
 
-#contact-item {
+.contact-item {
   height: 50px;
   font-size: 24px;
   font-weight: bold;
@@ -93,9 +93,10 @@ html {
 }
 
 .message-item {
+  height: 50px;
+  border-radius: 5px;
   font-size: 16px;
   color: #ffffff;
-  height: 50px;
   background-color: #246fa8;
 }
 
