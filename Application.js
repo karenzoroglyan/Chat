@@ -30,20 +30,22 @@ class Application {
    * @param {{ target: HTMLDivElement }} user
    */
   onUserClick(user) {
-    const element = Message(user.messages[0]);
-    this.props.messageContainer.append(element);
+    this.renderMessages(user);
+  }
+
+  renderMessages(user) {
+    this.props.messageContainer.innerHTML = ' ';
+    user.messages.forEach((message) => {
+      const element = Message(message);
+      this.props.messageContainer.append(element);
+    });
   }
 
   renderUsers() {
-    // console.log(this.users);
-    const userElements = this.props.users.map((user) =>
-      User({ user, onClick: () => this.onUserClick(user) })
-    );
-    console.log(userElements);
-
     // append userElements to this.contactList here
-    userElements.forEach((userElement) => {
-      this.props.contactList.append(userElement);
+    this.props.users.forEach((user) => {
+      const element = User({ user, onClick: () => this.onUserClick(user) });
+      this.props.contactList.append(element);
     });
   }
 
