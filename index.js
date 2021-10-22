@@ -4,5 +4,4 @@ const application = new Application({
   messageContainer: document.querySelector('.conversation-message-list'),
 });
 
-// application.registerEventListeners();
 application.render();

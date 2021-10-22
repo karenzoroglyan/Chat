@@ -15,17 +15,6 @@ class Application {
   }
 
   /**
-   * Registers event listeners for:
-   *   - contact list
-   */
-  registerEventListeners() {
-    this.props.contactList.addEventListener(
-      'click',
-      this.onUserClick.bind(this)
-    );
-  }
-
-  /**
    * Вызывается, когда пользователь нажимает на контейнер контактов
    * @param {{ target: HTMLDivElement }} user
    */
