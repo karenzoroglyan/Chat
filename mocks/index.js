@@ -1,28 +1,26 @@
 const MOCKS = {
   USERS: [
     {
-      id: 'ud23-ng4u',
-      name: 'Saul',
+      name: 'Karen',
+      surname: 'Zoroglian',
       messages: [
         {
-          text: 'Hello! You could use data-attributes to understand what user is clicked?',
+          text: 'Hello, ma brotha',
         },
         {
-          text: 'yo, bro!',
+          text: "How's it going?",
         },
       ],
     },
     {
-      id: '7n33-0o3v',
-      name: 'John',
-      messages: [{ text: 'Hi!Are you ok?Use event delegating..' }],
-    },
-    {
-      id: '4kvs-i18n',
-      name: 'Artem Zhukov',
+      name: 'Max',
+      surname: 'Samovolkin',
       messages: [
         {
-          text: 'Privet Karen Skazhi domashku Mne golova ne pozvolyaet Slishkom bolshaya',
+          text: 'Man, go smoke...',
+        },
+        {
+          text: 'I have new cigarettes',
         },
       ],
     },

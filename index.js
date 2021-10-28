@@ -5,3 +5,4 @@ const application = new Application({
 });
 
 application.render();
+application.fetchUsers();

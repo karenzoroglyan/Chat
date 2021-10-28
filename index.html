@@ -8,6 +8,59 @@
     <title>Chat</title>
   </head>
   <body>
+    <!-- <canvas id="canvas" width="600" height="600"></canvas>
+    <script>
+      var canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+
+      ctx.fillRect(10, 10, 100, 100);
+
+      let offset = 0;
+      let mul = 1;
+      const draw = () => {
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, 600, 600);
+        ctx.fillStyle = 'green';
+        const verticalOffset = Math.sin(offset / 45) * 150;
+        ctx.fillRect(
+          offset,
+          offset + verticalOffset,
+          Math.sin(offset / 50) * 100,
+          100
+        );
+        if (offset >= 500) {
+          mul = -1;
+        }
+
+        if (offset <= 0) {
+          mul = 1;
+        }
+
+        offset += 1 * mul;
+        requestAnimationFrame(draw);
+      };
+
+      draw();
+
+      // draw();
+    </script> -->
+    <div class="wrapper-lds-spinner">
+      <div class="lds-canvas"></div>
+      <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="contacts-section">
         <div class="search-contact">
