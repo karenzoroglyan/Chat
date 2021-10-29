@@ -213,6 +213,14 @@ html {
   background-color: #246fa8;
 }
 
+.post-item{
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #246fa8;
+}
+
 .conversation-form{
   display: flex;
   align-items: center;
