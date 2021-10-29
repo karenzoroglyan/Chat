@@ -30,16 +30,13 @@ class Application {
       });
   }
 
-  fetchPosts() {
-    fetch(
-      'https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109ca/post?limit=10',
-      {
-        method: 'GET',
-        headers: {
-          'app-id': '61781a4589f8b25e378f1812',
-        },
-      }
-    )
+  fetchPosts(userId) {
+    fetch(`https://dummyapi.io/data/v1/user/${userId}/post?limit=10`, {
+      method: 'GET',
+      headers: {
+        'app-id': '61781a4589f8b25e378f1812',
+      },
+    })
       .then(function (response) {
         return response.json();
       })
@@ -50,7 +47,7 @@ class Application {
   }
 
   onUserClick(user) {
-    this.fetchPosts();
+    this.fetchPosts(user.id);
   }
 
   renderMessages(user) {

@@ -4,7 +4,6 @@ function Post(props) {
   div.classList.add('post-item');
   div.innerHTML = `
         <img src="${post.image}" style="width:50px; height:50px">
-        id: ${post.id} 
     `;
 
   return div;
