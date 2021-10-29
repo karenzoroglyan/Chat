@@ -146,10 +146,22 @@ html {
 }
 
 .contact-item {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.user-data{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.user-data img{
   height: 50px;
-  font-size: 24px;
-  font-weight: bold;
-  background-color: #ffffff
+  width: 50px;
 }
 
 .add-contact-section {

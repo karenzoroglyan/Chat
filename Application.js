@@ -4,7 +4,6 @@ class Application {
     this.state = {
       users: [],
       loading: false, // или true?
-      label: 'user',
     };
   }
 
@@ -44,11 +43,7 @@ class Application {
 
   renderUsers() {
     this.state.users.forEach((user) => {
-      const element = User({
-        user,
-        onClick: () => this.onUserClick(user),
-        label: this.state.label,
-      });
+      const element = User({ user, onClick: () => this.onUserClick(user) });
       this.props.contactList.append(element);
     });
   }
