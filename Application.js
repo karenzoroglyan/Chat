@@ -31,6 +31,9 @@ class Application {
   }
 
   fetchPosts(userId) {
+    this.setState({
+      loading: true,
+    });
     fetch(`https://dummyapi.io/data/v1/user/${userId}/post?limit=10`, {
       method: 'GET',
       headers: {
@@ -42,7 +45,7 @@ class Application {
       })
       .then((response) => {
         const posts = response.data;
-        this.setState({ posts });
+        this.setState({ posts, loading: false });
       });
   }
 
@@ -74,8 +77,15 @@ class Application {
     });
   }
 
+  renderLoader() {
+    const loading = this.state.loading;
+    const loader = document.getElementById('loader');
+    loader.style.display = loading ? 'flex' : 'none';
+  }
+
   render() {
     this.renderUsers();
     this.renderPosts();
+    this.renderLoader();
   }
 }
