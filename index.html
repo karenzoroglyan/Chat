@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <!-- <canvas id="canvas" width="600" height="600"></canvas>
+    <script>
+      var canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+
+      ctx.fillRect(10, 10, 100, 100);
+
+      let offset = 0;
+      let mul = 1;
+      const draw = () => {
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, 600, 600);
+        ctx.fillStyle = 'green';
+        const verticalOffset = Math.sin(offset / 45) * 150;
+        ctx.fillRect(
+          offset,
+          offset + verticalOffset,
+          Math.sin(offset / 50) * 100,
+          100
+        );
+        if (offset >= 500) {
+          mul = -1;
+        }
+
+        if (offset <= 0) {
+          mul = 1;
+        }
+
+        offset += 1 * mul;
+        requestAnimationFrame(draw);
+      };
+
+      draw();
+
+      // draw();
+    </script> -->
+    <div class="wrapper-lds-spinner" id="loader">
+      <div class="lds-canvas"></div>
+      <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="contacts-section">
+        <div class="search-contact">
+          <input type="search" placeholder="search" />
+        </div>
+        <div id="contacts"></div>
+        <div class="add-contact-section">
+          <a class="add-contact-button" href="#">+</a>
+        </div>
+      </div>
+      <div class="conversation-section">
+        <div class="user-section"></div>
+        <div class="conversation-message-list"></div>
+        <div class="conversation-form">
+          <input type="text" placeholder="type a message" />
+        </div>
+      </div>
+    </div>
+    <script src="components/User.js"></script>
+    <script src="components/Message.js"></script>
+    <script src="components/Post.js"></script>
+    <script src="mocks/index.js"></script>
+    <script src="Application.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
